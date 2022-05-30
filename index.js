@@ -3,6 +3,7 @@ move(inventory).to(0, 0)
 
 const character = newImage('assets/green-character/static.gif')
 
+//write a function that handles the direction change of the character as well as changes the src depending on the direction character moves
 function handleDirectionChange(direction){
     if(direction === null){
         character.src = 'assets/green-character/static.gif'
@@ -23,10 +24,7 @@ function handleDirectionChange(direction){
 
 move(character).withArrowKeys(100, 250, handleDirectionChange)
 
-
-
-
-
+// other object src and left and bottom position
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
 move(newImage('assets/pine-tree.png')).to(450, 350)
